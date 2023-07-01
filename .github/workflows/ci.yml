@@ -6,12 +6,12 @@ on:
     branches:
       - main
     paths:
-      - 'web/**'
+      - 'public/**'
   push:
     branches:
       - main
     paths:
-      - 'web/**'
+      - 'public/**'
 
 jobs:
 
@@ -22,7 +22,7 @@ jobs:
       run:
         shell: bash
         # Define the working directory for all run steps in the workflow
-        working-directory: ./web
+        working-directory: ./public
     # Specify the OS we want the workflow to run on
     runs-on: ubuntu-latest
     # Define the steps for this job
